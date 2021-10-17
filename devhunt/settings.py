@@ -28,7 +28,7 @@ SECRET_KEY = '*84x(un+r1%7+v9w54d^so9n04!&i@w1uirwi@6j9(jj#l&6#1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://devhunt2021.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'devhunt2021.herokuapp.com']
 
 
 # Application definition
