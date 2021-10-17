@@ -20,7 +20,8 @@ class Project(models.Model):
         return self.title
 
     class Meta:
-        ordering = ['-vote_ratio', '-total_votes', 'title']
+        #ordering = ['-vote_ratio', '-total_votes', 'title']
+        ordering = ['created']
 
     @property
     def reviewers(self):

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
 
     'rest_framework',
+    'storages',
 ]
 
 REST_FRAMEWORK = {
@@ -194,6 +195,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 # tells django where to serve static files in production
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+AWS_ACCESS_KEY_ID = 'AKIA5WWHGPAAQZSHWHM4'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'devhunt2021-bucket'
+AWS_QUERYSTRING_AUTH = False
+AWS_S3_FILE_OVERWRITE = False
 
 if os.getcwd() == '/app':
     DEBUG = False
