@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from .models import Profile
 
 #@receiver(post_save, sender=Profile)
+# this decorator method can also be used..
 def createProfile(sender, instance, created, **kwargs):
     # Creates a profile any time a new user is created
     if created:
